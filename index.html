@@ -18,9 +18,10 @@
             background-color: #ffe600;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Cambiado: alineado arriba */
             overflow: hidden;
             position: relative;
+            padding-top: 0;
         }
 
         /* Imagen de fondo patron */
@@ -47,7 +48,7 @@
             height: 100vh;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Cambiado: alineado arriba */
         }
 
         .image-wrapper {
@@ -60,6 +61,7 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+            object-position: top; /* Cambiado: imagen pegada arriba */
             display: block;
         }
     </style>
